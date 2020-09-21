@@ -14,5 +14,12 @@
 </ion-header>
 
 <ion-content padding>
-  <p>Pagina de categorias</p>
+  <ion-list>
+    <button ion-item *ngFor="let item of itens" >
+      <ion-thumbnail>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>{{item.nome}}</h2>
+    </button>
+  </ion-list>
 </ion-content>
